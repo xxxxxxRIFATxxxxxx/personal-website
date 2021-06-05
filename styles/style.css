@@ -69,7 +69,7 @@ p {
 
 /* Top Banner Section CSS */
 .top-banner-section {
-    background-image: url("images/header-bg.png");
+    background-image: url("../images/header-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -91,7 +91,7 @@ p {
 
 /* Biography Section CSS */
 .biography-section {
-    background-image: url("images/biography-bg.png");
+    background-image: url("../images/biography-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -99,7 +99,7 @@ p {
 
 /* Latest Work Section CSS */
 .latest-work-section {
-    background-image: url("images/latest-work-bg.png");
+    background-image: url("../images/latest-work-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -107,7 +107,7 @@ p {
 
 /* Client Section CSS */
 .client-section {
-    background-image: url("images/footer-bg.png");
+    background-image: url("../images/footer-bg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -127,4 +127,58 @@ p {
     margin: auto;
 }
 
+/* Responsive CSS */
+@media only screen and (max-width: 960px) {
+    section {
+        height: 200vh;
+        padding: 50px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
 
+    .half-width {
+        width: 90%;
+        margin-bottom: 100px;
+    }
+
+    .box {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .client-section {
+        padding-top:  200vh;
+    }
+
+    .client-section p {
+        text-align: center;
+        padding: 20px 0 30px 0;
+    }
+    
+    .email-box {
+        background-image: linear-gradient(45deg, #EC4F93, #EC4C76);
+        padding: 30px 40px 20px 10px;
+        border-radius: 5px;
+        color: white;
+        width: 90%;
+        margin: auto;
+        font-size: 14px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+    }
+}
